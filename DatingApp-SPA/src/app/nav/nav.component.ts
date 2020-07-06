@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { AuthService } from '../_services/auth.service';
 
 @Component({
   selector: 'app-nav',
@@ -7,13 +7,20 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./nav.component.css'],
 })
 export class NavComponent implements OnInit {
+  model: any = {};
 
+  constructor(private authService: AuthService) {}
 
-  constructor(private http: HttpClient) {}
+  ngOnInit() {}
 
-  // tslint:disable-next-line: typedef
-  ngOnInit() {
-
+  login() {
+    this.authService.login(this.model).subscribe(
+      (next) => {
+        console.log('Logged in successfully!');
+      },
+      (error) => {
+        console.log('Failed to login');
+      }
+    );
   }
-
 }
