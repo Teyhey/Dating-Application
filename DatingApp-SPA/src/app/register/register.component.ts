@@ -14,7 +14,7 @@ export class RegisterComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  register() {
+  register(): void {
     this.authService.register(this.model).subscribe(
       () => {
         console.log('registration successful');
@@ -25,7 +25,7 @@ export class RegisterComponent implements OnInit {
     );
   }
 
-  cancel() {
+  cancel(): void {
     this.cancelRegister.emit(false);
     console.log('cancelled');
   }
