@@ -9,11 +9,13 @@ import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
-import { MemberListComponent } from './member-list/member-list.component';
+import { MemberListComponent } from './members/member-list/member-list.component';
 import { ListsComponent } from './lists/lists.component';
 import { MessagesComponent } from './messages/messages.component';
 import { RouterModule } from '@angular/router';
 import { routes } from './routes';
+import { MemberCardComponent } from './members/member-card/member-card.component';
+import { JwtModule } from '@auth0/angular-jwt';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,7 @@ import { routes } from './routes';
     MemberListComponent,
     ListsComponent,
     MessagesComponent,
+    MemberCardComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,6 +36,15 @@ import { routes } from './routes';
     BrowserAnimationsModule,
     BsDropdownModule.forRoot(),
     RouterModule.forRoot(routes),
+    JwtModule.forRoot({
+      config: {
+        tokenGetter: () => {
+          return localStorage.getItem('token');
+        },
+        allowedDomains: ['localhost:5000'],
+        disallowedRoutes: ['http://localhost:5000/api/auth']
+      }
+    }),
   ],
   providers: [ErrorInterceptorProvider],
   bootstrap: [AppComponent],

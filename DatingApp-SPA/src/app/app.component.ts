@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from './_services/auth.service';
 import { JwtHelperService } from '@auth0/angular-jwt';
+import { environment } from '../environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,7 @@ import { JwtHelperService } from '@auth0/angular-jwt';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
-  title = 'DatingApp-SPA';
+  title = environment.appTitle;
   jwtHelper = new JwtHelperService();
 
   constructor(private authService: AuthService) {}
