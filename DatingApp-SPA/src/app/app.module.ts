@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { TabsModule } from 'ngx-bootstrap/tabs';
 import { MemberListComponent } from './members/member-list/member-list.component';
 import { ListsComponent } from './lists/lists.component';
 import { MessagesComponent } from './messages/messages.component';
@@ -37,6 +38,7 @@ import { MemberDetailComponent } from './members/member-detail/member-detail.com
     BrowserAnimationsModule,
     BrowserAnimationsModule,
     BsDropdownModule.forRoot(),
+    TabsModule.forRoot(),
     RouterModule.forRoot(routes),
     JwtModule.forRoot({
       config: {
@@ -44,8 +46,8 @@ import { MemberDetailComponent } from './members/member-detail/member-detail.com
           return localStorage.getItem('token');
         },
         allowedDomains: ['localhost:5000'],
-        disallowedRoutes: ['http://localhost:5000/api/auth']
-      }
+        disallowedRoutes: ['http://localhost:5000/api/auth'],
+      },
     }),
   ],
   providers: [ErrorInterceptorProvider],
