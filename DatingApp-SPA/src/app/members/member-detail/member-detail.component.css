@@ -5,30 +5,45 @@ height: 85%;
 
 }
 
+.ngx-gallery{
+    display: inline-block;
+    margin-bottom:20px;
+}
+
+
 .card:hover{
-    transform: scale(1.01, 1.01);
+    -webkit-transform: perspective(1px) scale(1.01, 1.01);
+    -ms-transform:  scale(1.01, 1.01);
+    -moz-transform:  scale(1.01, 1.01);
+    transform: perspective(1px) scale(1.01, 1.01);
     transition-duration: 300ms;
     transition-timing-function: ease-out;
-    -webkit-font-smoothing: subpixel-antialiased;
 }
 
 .card:hover img{
-    transform: scale(1.01, 1.01);
+    -webkit-transform: perspective(1px) scale(1.01, 1.01);
+    -ms-transform:  scale(1.01, 1.01);
+    -moz-transform:  scale(1.01, 1.01);
+    transform: perspective(1px) scale(1.01, 1.01);
     transition-duration: 300ms;
     transition-timing-function: ease-out;
-    -webkit-font-smoothing: subpixel-antialiased;
 }
 
 .card img{
-    transform: scale(1.0, 1.0);
+    -webkit-transform: perspective(1px) scale(1.0, 1.0);
+    -ms-transform:  scale(1.0, 1.0);
+    -moz-transform:  scale(1.0, 1.0);
+    transform: perspective(1px) scale(1.0, 1.0);
     transition-duration: 200ms;
     transition-timing-function: ease-out;
-    -webkit-font-smoothing: subpixel-antialiased;
 }
 
 
 .card{
-    transform: scale(1.0, 1.0);
+    -webkit-transform: perspective(1px) scale(1.0, 1.0);
+    -ms-transform:  scale(1.0, 1.0);
+    -moz-transform:  scale(1.0, 1.0);
+    transform: perspective(1px) scale(1.0, 1.0);
     transition-duration: 200ms;
     transition-timing-function: ease-out;
 }
@@ -44,21 +59,30 @@ height: 85%;
 }
 
 .tab-panel:hover{
-    transform: scale(1.01, 1.01);
+    -webkit-transform: perspective(1px) scale(1.01, 1.01);
+    -ms-transform:  scale(1.01, 1.01);
+    -moz-transform:  scale(1.01, 1.01);
+    transform:  scale(1.01, 1.01);
     transition-duration: 300ms;
     transition-timing-function: ease-out;
     -webkit-font-smoothing: subpixel-antialiased;
 }
 
 .tab-panel:hover img{
-    transform: scale(1.01, 1.01);
+    -webkit-transform: perspective(1px) scale(1.01, 1.01);
+    -ms-transform:  scale(1.01, 1.01);
+    -moz-transform:  scale(1.01, 1.01);
+    transform:  scale(1.01, 1.01);
     transition-duration: 300ms;
     transition-timing-function: ease-out;
     -webkit-font-smoothing: subpixel-antialiased;
 }
 
 .tab-panel img{
-    transform: scale(1.0, 1.0);
+    -webkit-transform: perspective(1px) scale(1.0, 1.0);
+    -ms-transform:  scale(1.0, 1.0);
+    -moz-transform:  scale(1.0, 1.0);
+    transform: perspective(1px) scale(1.0, 1.0);
     transition-duration: 200ms;
     transition-timing-function: ease-out;
     -webkit-font-smoothing: subpixel-antialiased;
@@ -66,7 +90,10 @@ height: 85%;
 
 
 .tab-panel{
-    transform: scale(1.0, 1.0);
+    -webkit-transform: perspective(1px) scale(1.0, 1.0);
+    -ms-transform:  scale(1.0, 1.0);
+    -moz-transform:  scale(1.0, 1.0);
+    transform: perspective(1px) scale(1.0, 1.0);
     transition-duration: 200ms;
     transition-timing-function: ease-out;
 }

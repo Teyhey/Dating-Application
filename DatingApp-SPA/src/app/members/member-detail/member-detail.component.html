@@ -20,12 +20,12 @@
 
           <div>
             <strong>Last Active:</strong>
-            <p>{{ user?.lastActive | date: format:timezone }}</p>
+            <p>{{ user?.lastActive | date}}</p>
           </div>
 
           <div>
             <strong>Member Since:</strong>
-            <p>{{ user?.created | date: format:timezone }}</p>
+            <p>{{ user?.created | date}}</p>
           </div>
         </div>
 
@@ -55,7 +55,7 @@
 
           <tab heading="Photos">
             <h4>Interests</h4>
-            <p>{{ user?.photos }}</p>
+            <ngx-gallery [options]="galleryOptions" [images]="galleryImages" class="ngx-gallery"></ngx-gallery>
           </tab>
 
           <tab heading="Messages">
@@ -65,4 +65,5 @@
         </tabset>
       </div>
     </div>
+  </div>
 </div>

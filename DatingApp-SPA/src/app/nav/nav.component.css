@@ -13,12 +13,13 @@
   transition: all 0.5s;
 }
 
+
 .navbar-brand:nth-child(1),
 .nav-link:nth-child(1):hover {
   color: #ffffff;
 }
 .navbar-brand:nth-child(1):hover,
-.nav-link:nth-child(1):hover {
+.nav-link:nth-child(1):hover{
   -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
   -moz-animation: neon1 1.5s ease-in-out infinite alternate;
   animation: neon1 1.5s ease-in-out infinite alternate;
@@ -31,11 +32,11 @@
 }
 
 .navbar-brand:hover,
-.nav-link:hover {
+.nav-link:hover{
   color: rgb(255, 255, 255);
 }
 
-.nav-link:routerLink=['active'] {
+.nav-link{
   color: rgb(255, 255, 255);
 }
 
