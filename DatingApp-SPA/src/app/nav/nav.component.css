@@ -5,6 +5,30 @@
   cursor: pointer;
 }
 
+img{
+  max-height: 50px;
+  border: 1px solid white;
+  display: inline;
+}
+
+.user-block:hover{
+  -webkit-transform: perspective(1px) scale(1.01, 1.01);
+  -ms-transform:  scale(1.01, 1.01);
+  -moz-transform:  scale(1.01, 1.01);
+  transform: perspective(1px) scale(1.01, 1.01);
+  transition-duration: 300ms;
+  transition-timing-function: ease-out;
+}
+
+.user-block {
+  -webkit-transform: perspective(1px) scale(1.0, 1.0);
+  -ms-transform:  scale(1.0, 1.0);
+  -moz-transform:  scale(1.0, 1.0);
+  transform: perspective(1px) scale(1.0, 1.0);
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+}
+
 .navbar-brand,
 .nav-link {
   text-decoration: none;

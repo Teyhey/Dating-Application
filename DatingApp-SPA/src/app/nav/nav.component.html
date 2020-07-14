@@ -15,9 +15,14 @@
     </ul>
 
     <div *ngIf="loggedIn()" class="dropdown" dropdown>
+      <div class="user-block">
+      <span class="mr-2">
+        <img src="{{photoUrl}}" alt="">
+      </span>
       <a class="dropdown-toggle text-light" dropdownToggle>
         Welcome {{ authService.decodedToken?.unique_name | titlecase }}
       </a>
+    </div>
       <div class="dropdown-menu mt-3" *dropdownMenu>
         <a class="dropdown-item" [routerLink]="['/member/edit']" >
           <i class="fa fa-user"></i> Edit Profile</a
