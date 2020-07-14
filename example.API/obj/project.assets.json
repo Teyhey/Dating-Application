@@ -28,10 +28,10 @@
           "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
-      "CloudinaryDotNet/1.9.1": {
+      "CloudinaryDotNet/1.11.0": {
         "type": "package",
         "dependencies": {
-          "Newtonsoft.Json": "12.0.0"
+          "Newtonsoft.Json": "12.0.1"
         },
         "compile": {
           "lib/netstandard1.3/CloudinaryDotNet.dll": {}
@@ -761,24 +761,17 @@
         "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.pdb"
       ]
     },
-    "CloudinaryDotNet/1.9.1": {
-      "sha512": "E5nJnmmBiKcbnhNhjWai5STm+8lOgSwlbCiHJ10IOnFN4dkIyhi8IyswT5bESEPo2dDG7Jt/0JESoQVUPz4lIg==",
+    "CloudinaryDotNet/1.11.0": {
+      "sha512": "pPz/CnKc1kkqjRtLiXDxVl/xjFKNBEKjhSy2266LL4/Y0NngXaJVjI4Lw7Yhh+yCiwM6Rwo40V1j1jzFgoyLsA==",
       "type": "package",
-      "path": "cloudinarydotnet/1.9.1",
+      "path": "cloudinarydotnet/1.11.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "cloudinarydotnet.1.9.1.nupkg.sha512",
+        "cloudinarydotnet.1.11.0.nupkg.sha512",
         "cloudinarydotnet.nuspec",
         "lib/net45/CloudinaryDotNet.dll",
         "lib/net45/CloudinaryDotNet.xml",
-        "lib/net45/Newtonsoft.Json.dll",
-        "lib/net45/System.Runtime.InteropServices.RuntimeInformation.dll",
-        "lib/net45/System.Text.Encodings.Web.dll",
-        "lib/netcore/CloudinaryDotNet.deps.json",
-        "lib/netcore/CloudinaryDotNet.dll",
-        "lib/netcore/CloudinaryDotNet.xml",
-        "lib/netstandard1.3/CloudinaryDotNet.deps.json",
         "lib/netstandard1.3/CloudinaryDotNet.dll",
         "lib/netstandard1.3/CloudinaryDotNet.xml"
       ]
@@ -2286,7 +2279,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.0": [
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 7.0.0",
-      "CloudinaryDotNet >= 1.9.1",
+      "CloudinaryDotNet >= 1.11.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 3.0.0",
       "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 3.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 3.0.0",
@@ -2301,11 +2294,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\johnp\\Documents\\GitHub\\Dating-App\\example.API\\example.API.csproj",
+      "projectUniqueName": "c:\\Users\\johnp\\Documents\\GitHub\\Dating-App\\example.API\\example.API.csproj",
       "projectName": "example.API",
-      "projectPath": "C:\\Users\\johnp\\Documents\\GitHub\\Dating-App\\example.API\\example.API.csproj",
+      "projectPath": "c:\\Users\\johnp\\Documents\\GitHub\\Dating-App\\example.API\\example.API.csproj",
       "packagesPath": "C:\\Users\\johnp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\johnp\\Documents\\GitHub\\Dating-App\\example.API\\obj\\",
+      "outputPath": "c:\\Users\\johnp\\Documents\\GitHub\\Dating-App\\example.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\johnp\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -2336,7 +2329,7 @@
           },
           "CloudinaryDotNet": {
             "target": "Package",
-            "version": "[1.9.1, )"
+            "version": "[1.11.0, )"
           },
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",
@@ -2404,17 +2397,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1603",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "CloudinaryDotNet 1.9.1 depends on Newtonsoft.Json (>= 12.0.0) but Newtonsoft.Json 12.0.0 was not found. An approximate best match of Newtonsoft.Json 12.0.1 was resolved.",
-      "libraryId": "Newtonsoft.Json",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.0"
-      ]
-    }
-  ]
+  }
 }

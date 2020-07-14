@@ -42,7 +42,7 @@
             },
             "CloudinaryDotNet": {
               "target": "Package",
-              "version": "[1.9.1, )"
+              "version": "[1.11.0, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",

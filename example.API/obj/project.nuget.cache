@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "oonu7dTAXm6CqM/2EVx9J8RVuS+0eY5cXzM8ukl2XarHzLUUdsA/Kj1Y0HVSOOy3WXsUh7IJoWlAz1sVElJvSw==",
+  "dgSpecHash": "2AXdrVIT7NuUqP6FV6kw+lAPSpS/nYKVzS+G77kT2NwhVF5ubBcSi3XHYj8CbveJaYvxh8BMGnZkY4m1666n3g==",
   "success": true,
   "projectFilePath": "C:\\Users\\johnp\\Documents\\GitHub\\Dating-App\\example.API\\example.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\johnp\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\johnp\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\7.0.0\\automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",
-    "C:\\Users\\johnp\\.nuget\\packages\\cloudinarydotnet\\1.9.1\\cloudinarydotnet.1.9.1.nupkg.sha512",
+    "C:\\Users\\johnp\\.nuget\\packages\\cloudinarydotnet\\1.11.0\\cloudinarydotnet.1.11.0.nupkg.sha512",
     "C:\\Users\\johnp\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.0.0\\microsoft.aspnetcore.authentication.jwtbearer.3.0.0.nupkg.sha512",
     "C:\\Users\\johnp\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.0.0\\microsoft.aspnetcore.jsonpatch.3.0.0.nupkg.sha512",
     "C:\\Users\\johnp\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\3.0.0\\microsoft.aspnetcore.mvc.newtonsoftjson.3.0.0.nupkg.sha512",
@@ -66,16 +66,5 @@
     "C:\\Users\\johnp\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
     "C:\\Users\\johnp\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.0.3\\microsoft.netcore.app.host.win-x64.3.0.3.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1603",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "CloudinaryDotNet 1.9.1 depends on Newtonsoft.Json (>= 12.0.0) but Newtonsoft.Json 12.0.0 was not found. An approximate best match of Newtonsoft.Json 12.0.1 was resolved.",
-      "libraryId": "Newtonsoft.Json",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.0"
-      ]
-    }
-  ]
+  "logs": []
 }
