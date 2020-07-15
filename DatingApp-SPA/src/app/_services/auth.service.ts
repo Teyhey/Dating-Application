@@ -42,8 +42,8 @@ changeMemberPhoto(photoUrl: string): void{
     );
   }
 
-  register(model: any): any{
-    return this.http.post(this.baseUrl + 'register', model);
+  register(user: User): any{
+    return this.http.post(this.baseUrl + 'register', user);
   }
 
   loggedIn(): any{
