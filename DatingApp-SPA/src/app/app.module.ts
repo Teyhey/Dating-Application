@@ -31,6 +31,7 @@ import { MemberEditResolver } from './_resolvers/member-edit.resolver';
 import { PreventUnsavedChanges } from './_guards/prevent-unsaved-changes.guard';
 import { PhotoEditorComponent } from './members/photo-editor/photo-editor.component';
 import { FileUploadModule } from 'ng2-file-upload';
+import {TimeagoModule} from 'ngx-timeago';
 
 @NgModule({
   declarations: [
@@ -53,6 +54,7 @@ import { FileUploadModule } from 'ng2-file-upload';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     NgxGalleryModule,
+    TimeagoModule.forRoot(),
     FileUploadModule,
     BsDropdownModule.forRoot(),
     BsDatepickerModule.forRoot(),
