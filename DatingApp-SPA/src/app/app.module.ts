@@ -31,7 +31,8 @@ import { MemberEditResolver } from './_resolvers/member-edit.resolver';
 import { PreventUnsavedChanges } from './_guards/prevent-unsaved-changes.guard';
 import { PhotoEditorComponent } from './members/photo-editor/photo-editor.component';
 import { FileUploadModule } from 'ng2-file-upload';
-import {TimeagoModule} from 'ngx-timeago';
+import { TimeagoModule } from 'ngx-timeago';
+import { PaginationModule } from 'ngx-bootstrap/pagination';
 
 @NgModule({
   declarations: [
@@ -58,6 +59,7 @@ import {TimeagoModule} from 'ngx-timeago';
     FileUploadModule,
     BsDropdownModule.forRoot(),
     BsDatepickerModule.forRoot(),
+    PaginationModule.forRoot(),
     TabsModule.forRoot(),
     RouterModule.forRoot(routes),
     JwtModule.forRoot({
