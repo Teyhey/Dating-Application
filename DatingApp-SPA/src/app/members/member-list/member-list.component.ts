@@ -4,7 +4,6 @@ import { UserService } from '../../_services/user.service';
 import { AlertifyService } from '../../_services/alertify.service';
 import { ActivatedRoute } from '@angular/router';
 import { Pagination, PaginationResult } from '../../_models/pagination';
-import { Options } from 'ng5-slider';
 
 @Component({
   selector: 'app-member-list',
@@ -17,15 +16,6 @@ export class MemberListComponent implements OnInit {
   genderList = [{value: 'male', display: 'Males'}, {value: 'female', display: 'Females'}];
   userParams: any = {};
   pagination: Pagination;
-  options: Options = {
-    ceil: 100,
-    floor: 18,
-    showSelectionBar: true,
-    selectionBarGradient: {
-      from: 'white',
-      to: '#FC0'
-    }
-  };
 
   constructor(
     private userService: UserService,
