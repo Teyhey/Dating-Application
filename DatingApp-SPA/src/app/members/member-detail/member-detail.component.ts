@@ -1,11 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { User } from '../../_models/user';
 import { UserService } from '../../_services/user.service';
 import { AlertifyService } from '../../_services/alertify.service';
 import { ActivatedRoute } from '@angular/router';
-import {NgxGalleryOptions} from '@kolkov/ngx-gallery';
-import {NgxGalleryImage} from '@kolkov/ngx-gallery';
-import {NgxGalleryAnimation} from '@kolkov/ngx-gallery';
+import { NgxGalleryOptions } from '@kolkov/ngx-gallery';
+import { NgxGalleryImage } from '@kolkov/ngx-gallery';
+import { NgxGalleryAnimation } from '@kolkov/ngx-gallery';
+import { TabsetComponent } from 'ngx-bootstrap/tabs';
 
 @Component({
   selector: 'app-member-detail',
@@ -13,6 +14,8 @@ import {NgxGalleryAnimation} from '@kolkov/ngx-gallery';
   styleUrls: ['./member-detail.component.css'],
 })
 export class MemberDetailComponent implements OnInit {
+  @ViewChild('memberTabs', { static: true }) memberTabs: TabsetComponent;
+
   user: User;
   galleryOptions: NgxGalleryOptions[];
   galleryImages: NgxGalleryImage[];
@@ -28,6 +31,11 @@ export class MemberDetailComponent implements OnInit {
       this.user = data['user'];
     });
 
+    this.route.queryParams.subscribe(params =>{
+      const selectecTab = params['tab'];
+      this.memberTabs.tabs[selectecTab > 0 ? selectecTab : 0].active = true;
+    });
+
     this.galleryOptions = [
       {
         width: '500px',
@@ -40,38 +48,27 @@ export class MemberDetailComponent implements OnInit {
         imageSwipe: true,
         imageInfinityMove: true,
         thumbnailsAutoHide: true,
-        
-      }
+      },
     ];
 
     this.galleryImages = this.getImages();
   }
 
-getImages(): any{
-  const imgUrls = [];
-  for(const photo of this.user.photos){
+  getImages(): any {
+    const imgUrls = [];
+    for (const photo of this.user.photos) {
       imgUrls.push({
         small: photo.url,
         medium: photo.url,
         big: photo.url,
-        description: photo.description
+        description: photo.description,
       });
     }
-  return imgUrls;
-}
-
-
-  /*
-  // members/4/
-  loadUser(): void {
-    this.userService.getUser(+this.route.snapshot.params['id']).subscribe(
-      (user: User) => {
-        this.user = user;
-      },
-      (error) => {
-        this.alertify.error(error);
-      }
-    );
+    return imgUrls;
   }
-  */
+
+  selectTab(tabId: number): void {
+    this.memberTabs.tabs[tabId].active = true;
+  }
+
 }

@@ -90,7 +90,7 @@ export class UserService {
 
   getMessages(id: number, page?, itemsPerPage?, messageContainer?): any {
     const paginatedResult: PaginationResult<Message[]> = new PaginationResult<
-      Message
+      Message[]
     >();
     let params = new HttpParams();
     params = params.append('MessageContainer', messageContainer);
@@ -116,5 +116,11 @@ export class UserService {
           return paginatedResult;
         })
       );
+  }
+
+  getMessageThread(id: number, recipientId: number): any {
+    return this.http.get<Message[]>(
+      this.baseUrl + 'users/' + id + '/messages/thread/' + recipientId
+    );
   }
 }
