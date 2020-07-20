@@ -10,3 +10,17 @@ td {
     vertical-align: middle;
 }
 
+.aMessage{
+    transform: scale(1.0, 1.0);
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    opacity: 0.8;
+}
+
+.aMessage:hover{
+    transform: scale(1.01, 1.01);
+    transition-duration: 300ms;
+    transition-timing-function: ease-out;
+    border-color: lightsalmon;
+    opacity: 1;
+}
