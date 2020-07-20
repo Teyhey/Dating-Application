@@ -123,4 +123,8 @@ export class UserService {
       this.baseUrl + 'users/' + id + '/messages/thread/' + recipientId
     );
   }
+
+  sendMessage(id: number, message: Message): any {
+    return this.http.post(this.baseUrl + 'users/' + id + '/messages', message);
+  }
 }
