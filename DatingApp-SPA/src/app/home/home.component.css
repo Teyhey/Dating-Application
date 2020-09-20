@@ -6,12 +6,12 @@ body {
   background-size: auto;
 }
 
-h1,
-p {
+h1.homeComp,
+p.homeComp {
   color: azure;
 }
 
-h1 {
+h1.homeComp {
   margin-top: 50%;
   font-size: 400%;
   position: relative;

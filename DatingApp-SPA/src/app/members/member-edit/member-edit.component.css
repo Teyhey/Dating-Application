@@ -1,100 +1,106 @@
-.img-thumbnail{
-    margin: 25px;
-    width: 85%;
-    height: 85%;
-    
-    }
-    
-    .ngx-gallery{
-        display: inline-block;
-        margin-bottom:20px;
-    }
-    
-    
-    .card:hover{
-        -webkit-transform: perspective(1px) scale(1.01, 1.01);
-        -ms-transform:  scale(1.01, 1.01);
-        -moz-transform:  scale(1.01, 1.01);
-        transform: perspective(1px) scale(1.01, 1.01);
-        transition-duration: 300ms;
-        transition-timing-function: ease-out;
-    }
-    
-    .card:hover img{
-        -webkit-transform: perspective(1px) scale(1.01, 1.01);
-        -ms-transform:  scale(1.01, 1.01);
-        -moz-transform:  scale(1.01, 1.01);
-        transform: perspective(1px) scale(1.01, 1.01);
-        transition-duration: 300ms;
-        transition-timing-function: ease-out;
-    }
-    
-    .card img{
-        -webkit-transform: perspective(1px) scale(1.0, 1.0);
-        -ms-transform:  scale(1.0, 1.0);
-        -moz-transform:  scale(1.0, 1.0);
-        transform: perspective(1px) scale(1.0, 1.0);
-        transition-duration: 200ms;
-        transition-timing-function: ease-out;
-    }
-    
-    
-    .card{
-        -webkit-transform: perspective(1px) scale(1.0, 1.0);
-        -ms-transform:  scale(1.0, 1.0);
-        -moz-transform:  scale(1.0, 1.0);
-        transform: perspective(1px) scale(1.0, 1.0);
-        transition-duration: 200ms;
-        transition-timing-function: ease-out;
-    }
-    
-    .card-body{
-        padding: 0 25px;
-    }
-    
-    .card-footer{
-        padding: 10px 15px;
-        background-color: #fff;
-        border-top: none;
-    }
-    
-    .tab-panel:hover{
-        -webkit-transform: perspective(1px) scale(1.01, 1.01);
-        -ms-transform:  scale(1.01, 1.01);
-        -moz-transform:  scale(1.01, 1.01);
-        transform:  scale(1.01, 1.01);
-        transition-duration: 300ms;
-        transition-timing-function: ease-out;
-        -webkit-font-smoothing: subpixel-antialiased;
-    }
-    
-    .tab-panel:hover img{
-        -webkit-transform: perspective(1px) scale(1.01, 1.01);
-        -ms-transform:  scale(1.01, 1.01);
-        -moz-transform:  scale(1.01, 1.01);
-        transform:  scale(1.01, 1.01);
-        transition-duration: 300ms;
-        transition-timing-function: ease-out;
-        -webkit-font-smoothing: subpixel-antialiased;
-    }
-    
-    .tab-panel img{
-        -webkit-transform: perspective(1px) scale(1.0, 1.0);
-        -ms-transform:  scale(1.0, 1.0);
-        -moz-transform:  scale(1.0, 1.0);
-        transform: perspective(1px) scale(1.0, 1.0);
-        transition-duration: 200ms;
-        transition-timing-function: ease-out;
-        -webkit-font-smoothing: subpixel-antialiased;
-    }
-    
-    
-    .tab-panel{
-        -webkit-transform: perspective(1px) scale(1.0, 1.0);
-        -ms-transform:  scale(1.0, 1.0);
-        -moz-transform:  scale(1.0, 1.0);
-        transform: perspective(1px) scale(1.0, 1.0);
-        transition-duration: 200ms;
-        transition-timing-function: ease-out;
-    }
-    
+.img-thumbnail {
+  margin: 25px;
+  width: 85%;
+  height: 85%;
+}
+strong {
+  color: black;
+}
+
+p {
+  color: black;
+}
+
+.tab-panel {
+  background-color: white;
+}
+
+.ngx-gallery {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.card:hover {
+  -webkit-transform: perspective(1px) scale(1.01, 1.01);
+  -ms-transform: scale(1.01, 1.01);
+  -moz-transform: scale(1.01, 1.01);
+  transform: perspective(1px) scale(1.01, 1.01);
+  transition-duration: 300ms;
+  transition-timing-function: ease-out;
+}
+
+.card:hover img {
+  -webkit-transform: perspective(1px) scale(1.01, 1.01);
+  -ms-transform: scale(1.01, 1.01);
+  -moz-transform: scale(1.01, 1.01);
+  transform: perspective(1px) scale(1.01, 1.01);
+  transition-duration: 300ms;
+  transition-timing-function: ease-out;
+}
+
+.card img {
+  -webkit-transform: perspective(1px) scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  transform: perspective(1px) scale(1, 1);
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+}
+
+.card {
+  -webkit-transform: perspective(1px) scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  transform: perspective(1px) scale(1, 1);
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+}
+
+.card-body {
+  padding: 0 25px;
+}
+
+.card-footer {
+  padding: 10px 15px;
+  background-color: #fff;
+  border-top: none;
+}
+
+.tab-panel:hover {
+  -webkit-transform: perspective(1px) scale(1.01, 1.01);
+  -ms-transform: scale(1.01, 1.01);
+  -moz-transform: scale(1.01, 1.01);
+  transform: scale(1.01, 1.01);
+  transition-duration: 300ms;
+  transition-timing-function: ease-out;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.tab-panel:hover img {
+  -webkit-transform: perspective(1px) scale(1.01, 1.01);
+  -ms-transform: scale(1.01, 1.01);
+  -moz-transform: scale(1.01, 1.01);
+  transform: scale(1.01, 1.01);
+  transition-duration: 300ms;
+  transition-timing-function: ease-out;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.tab-panel img {
+  -webkit-transform: perspective(1px) scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  transform: perspective(1px) scale(1, 1);
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.tab-panel {
+  -webkit-transform: perspective(1px) scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  transform: perspective(1px) scale(1, 1);
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+}
