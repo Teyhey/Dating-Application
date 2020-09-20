@@ -5,6 +5,12 @@
   cursor: pointer;
 }
 
+
+button{
+  padding-left: 10px;
+}
+
+
 img{
   max-height: 50px;
   border: 1px solid white;

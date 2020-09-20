@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
   <div class="container">
-    <a class="navbar-brand" [routerLink]="['/home']">Dating App</a>
+    <a class="navbar-brand" [routerLink]="['/home']">Sizzle</a>
 
     <ul *ngIf="loggedIn()" class="navbar-nav mr-auto">
       <li class="nav-item" routerLinkActive="active">
@@ -14,6 +14,15 @@
       </li>
     </ul>
 
+    <ul *ngIf="!loggedIn()" class="navbar-nav ml-auto">
+      <li class="nav-item mr-4" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/register']" *ngIf="!showLogin">Register</a>
+      </li>
+      <li class="nav-item ml-4" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/login']" (click)="showLoginFields()" *ngIf="!showLogin">Login</a>
+      </li>
+    </ul>
+
     <div *ngIf="loggedIn()" class="dropdown" dropdown>
       <div class="user-block">
       <span class="mr-2">
@@ -23,6 +32,7 @@
         Welcome {{ authService.decodedToken?.unique_name | titlecase }}
       </a>
     </div>
+
       <div class="dropdown-menu mt-3" *dropdownMenu>
         <a class="dropdown-item" [routerLink]="['/member/edit']" >
           <i class="fa fa-user"></i> Edit Profile</a
@@ -34,8 +44,9 @@
       </div>
     </div>
 
-    <form
-      *ngIf="!loggedIn()"
+
+    <div *ngIf="showLogin">
+      <form
       #loginForm="ngForm"
       class="form-inline my-2 my-lg-0"
       (ngSubmit)="login()"
@@ -64,5 +75,8 @@
         Login
       </button>
     </form>
+    </div>
+    
+
   </div>
 </nav>
