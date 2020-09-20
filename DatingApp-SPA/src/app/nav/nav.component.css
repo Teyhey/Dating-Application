@@ -15,9 +15,10 @@
   font-size: medium;
 }
 
-.navbar-brand{
-  font-size: xx-large;
+#logo{
+  font-size: x-large;
 }
+
 
 button{
   padding-left: 10px;

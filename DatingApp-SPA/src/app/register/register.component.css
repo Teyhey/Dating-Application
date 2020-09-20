@@ -2,3 +2,8 @@
 h1, p, label {
     color: azure;
   }
+
+hr{
+    color: azure;
+    background-color: azure;
+  }
