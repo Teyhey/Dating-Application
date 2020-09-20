@@ -1,16 +1,21 @@
 <!-- home page html -->
 
-<div *ngIf="!registerMode" class="text-center mt-5">
-  <h1>Find your match</h1>
-  <p class="lead">
-    Find you match today... All you need to do is sign up!
+<div *ngIf="!registerMode" class="mt-5 ml-5 col-lg-offset-4 col-lg-4 col-md-offset-4 col-md-4 col-sm-offset-4 col-sm-4">
+  <h1 class="text-center">Start a Sizzle</h1>
+  <p class=" text-center">
+    Every 5 minutes a new match is sizzling. 
+    What are you waiting for? Sign up today!
   </p>
+ 
+  <!--
   <div class="text-center">
     <button class="btn btn-primary btn-lg mr-2" (click)="registerToggle()">
       Register
     </button>
     <button class="btn btn-info btn-lg">Learn More</button>
   </div>
+-->
+
 </div>
 
 <div *ngIf="registerMode" class="container">

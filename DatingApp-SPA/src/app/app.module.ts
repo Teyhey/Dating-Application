@@ -37,7 +37,7 @@ import { ButtonsModule } from 'ngx-bootstrap/buttons';
 import { ListsResolver } from './_resolvers/lists.resolver';
 import { MessagesResolver } from './_resolvers/messages.resolver';
 import { MemberMessagesComponent } from './members/member-messages/member-messages.component';
-import { ClarityModule } from '@clr/angular';
+
 
 @NgModule({
   declarations: [
@@ -78,7 +78,6 @@ import { ClarityModule } from '@clr/angular';
         disallowedRoutes: ['http://localhost:5000/api/auth'],
       },
     }),
-    ClarityModule,
   ],
   providers: [
     ErrorInterceptorProvider,

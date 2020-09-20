@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { User } from '../../_models/user';
 import { UserService } from '../../_services/user.service';
 import { AlertifyService } from '../../_services/alertify.service';
@@ -9,6 +9,7 @@ import { Pagination, PaginationResult } from '../../_models/pagination';
   selector: 'app-member-list',
   templateUrl: './member-list.component.html',
   styleUrls: ['./member-list.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
 export class MemberListComponent implements OnInit {
   users: User[];

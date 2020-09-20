@@ -1,99 +1,117 @@
-.img-thumbnail{
-margin: 25px;
-width: 85%;
-height: 85%;
-
+.img-thumbnail {
+  margin: 25px;
+  width: 85%;
+  height: 85%;
 }
 
-.ngx-gallery{
-    display: inline-block;
-    margin-bottom:20px;
+body {
+  background: #c31432; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #240b36, #c31432) fixed; /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #240b36, #c31432) fixed; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 
-
-.card:hover{
-    -webkit-transform: perspective(1px) scale(1.01, 1.01);
-    -ms-transform:  scale(1.01, 1.01);
-    -moz-transform:  scale(1.01, 1.01);
-    transform: perspective(1px) scale(1.01, 1.01);
-    transition-duration: 300ms;
-    transition-timing-function: ease-out;
+h1, strong {
+  color: white;
 }
 
-.card:hover img{
-    -webkit-transform: perspective(1px) scale(1.01, 1.01);
-    -ms-transform:  scale(1.01, 1.01);
-    -moz-transform:  scale(1.01, 1.01);
-    transform: perspective(1px) scale(1.01, 1.01);
-    transition-duration: 300ms;
-    transition-timing-function: ease-out;
+p{
+    color: #240b36;
 }
 
-.card img{
-    -webkit-transform: perspective(1px) scale(1.0, 1.0);
-    -ms-transform:  scale(1.0, 1.0);
-    -moz-transform:  scale(1.0, 1.0);
-    transform: perspective(1px) scale(1.0, 1.0);
-    transition-duration: 200ms;
-    transition-timing-function: ease-out;
+.ngx-gallery {
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
-
-.card{
-    -webkit-transform: perspective(1px) scale(1.0, 1.0);
-    -ms-transform:  scale(1.0, 1.0);
-    -moz-transform:  scale(1.0, 1.0);
-    transform: perspective(1px) scale(1.0, 1.0);
-    transition-duration: 200ms;
-    transition-timing-function: ease-out;
+.card:hover {
+  -webkit-transform: perspective(1px) scale(1.01, 1.01);
+  -ms-transform: scale(1.01, 1.01);
+  -moz-transform: scale(1.01, 1.01);
+  transform: perspective(1px) scale(1.01, 1.01);
+  transition-duration: 300ms;
+  transition-timing-function: ease-out;
 }
 
-.card-body{
-    padding: 0 25px;
+.card:hover img {
+  -webkit-transform: perspective(1px) scale(1.01, 1.01);
+  -ms-transform: scale(1.01, 1.01);
+  -moz-transform: scale(1.01, 1.01);
+  transform: perspective(1px) scale(1.01, 1.01);
+  transition-duration: 300ms;
+  transition-timing-function: ease-out;
 }
 
-.card-footer{
-    padding: 10px 15px;
-    background-color: #fff;
-    border-top: none;
+.card img {
+  -webkit-transform: perspective(1px) scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  transform: perspective(1px) scale(1, 1);
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  
 }
 
-.tab-panel:hover{
-    -webkit-transform: perspective(1px) scale(1.01, 1.01);
-    -ms-transform:  scale(1.01, 1.01);
-    -moz-transform:  scale(1.01, 1.01);
-    transform:  scale(1.01, 1.01);
-    transition-duration: 300ms;
-    transition-timing-function: ease-out;
-    -webkit-font-smoothing: subpixel-antialiased;
+.card {
+  -webkit-transform: perspective(1px) scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  transform: perspective(1px) scale(1, 1);
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  background: #c31432; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #240b36, #c31432) fixed; /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #240b36, #c31432) fixed; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 
-.tab-panel:hover img{
-    -webkit-transform: perspective(1px) scale(1.01, 1.01);
-    -ms-transform:  scale(1.01, 1.01);
-    -moz-transform:  scale(1.01, 1.01);
-    transform:  scale(1.01, 1.01);
-    transition-duration: 300ms;
-    transition-timing-function: ease-out;
-    -webkit-font-smoothing: subpixel-antialiased;
+.card-body {
+  padding: 0 25px;
 }
 
-.tab-panel img{
-    -webkit-transform: perspective(1px) scale(1.0, 1.0);
-    -ms-transform:  scale(1.0, 1.0);
-    -moz-transform:  scale(1.0, 1.0);
-    transform: perspective(1px) scale(1.0, 1.0);
-    transition-duration: 200ms;
-    transition-timing-function: ease-out;
-    -webkit-font-smoothing: subpixel-antialiased;
+.card-footer {
+  padding: 10px 15px;
+  background-color: #fff;
+  border-top: none;
 }
 
+.tab-panel:hover {
+  -webkit-transform: perspective(1px) scale(1.01, 1.01);
+  -ms-transform: scale(1.01, 1.01);
+  -moz-transform: scale(1.01, 1.01);
+  transform: scale(1.01, 1.01);
+  transition-duration: 300ms;
+  transition-timing-function: ease-out;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
 
-.tab-panel{
-    -webkit-transform: perspective(1px) scale(1.0, 1.0);
-    -ms-transform:  scale(1.0, 1.0);
-    -moz-transform:  scale(1.0, 1.0);
-    transform: perspective(1px) scale(1.0, 1.0);
-    transition-duration: 200ms;
-    transition-timing-function: ease-out;
+.tab-panel:hover img {
+  -webkit-transform: perspective(1px) scale(1.01, 1.01);
+  -ms-transform: scale(1.01, 1.01);
+  -moz-transform: scale(1.01, 1.01);
+  transform: scale(1.01, 1.01);
+  transition-duration: 300ms;
+  transition-timing-function: ease-out;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.tab-panel img {
+  -webkit-transform: perspective(1px) scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  transform: perspective(1px) scale(1, 1);
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.tab-panel {
+  -webkit-transform: perspective(1px) scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  transform: perspective(1px) scale(1, 1);
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
 }

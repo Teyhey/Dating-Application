@@ -1,6 +1,9 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+<nav class="navbar navbar-expand-md navbar-dark">
   <div class="container">
-    <a class="navbar-brand" [routerLink]="['/home']">Sizzle</a>
+    <a class="navbar-brand" [routerLink]="['/home']" (click)="[showLogin = false, registerToggle(false)]">
+      🔥
+      Sizzle
+    </a>
 
     <ul *ngIf="loggedIn()" class="navbar-nav mr-auto">
       <li class="nav-item" routerLinkActive="active">
@@ -16,7 +19,10 @@
 
     <ul *ngIf="!loggedIn()" class="navbar-nav ml-auto">
       <li class="nav-item mr-4" routerLinkActive="active">
-        <a class="nav-link" [routerLink]="['/register']" *ngIf="!showLogin">Register</a>
+        <a class="nav-link" [routerLink]="['/about']" *ngIf="!showLogin">About</a>
+      </li>
+      <li class="nav-item mr-4" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/register']" *ngIf="!showLogin" (click)="registerToggle(true)" >Sign Up</a>
       </li>
       <li class="nav-item ml-4" routerLinkActive="active">
         <a class="nav-link" [routerLink]="['/login']" (click)="showLoginFields()" *ngIf="!showLogin">Login</a>
