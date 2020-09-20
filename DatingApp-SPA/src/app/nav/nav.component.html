@@ -45,7 +45,7 @@
     </div>
 
 
-    <div *ngIf="showLogin">
+    <div *ngIf="showLogin && !loggedIn()">
       <form
       #loginForm="ngForm"
       class="form-inline my-2 my-lg-0"
