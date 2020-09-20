@@ -5,6 +5,7 @@
   cursor: pointer;
 }
 
+
 .navbar-dark{
   background: #c31432;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, #240b36, #c31432) fixed;  /* Chrome 10-25, Safari 5.1-6 */
