@@ -68,10 +68,19 @@ namespace example.API
             }
 
             // app.UseHttpsRedirection();
-            app.UseCors(x => x.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
+            app.UseRouting();
             app.UseAuthentication();
             app.UseAuthorization();
-            app.UseMvc();
+            app.UseCors(x => x.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
+
+            app.UseEndpoints(endpoints => {
+                endpoints.MapControllers();
+                endpoints.MapFallbackToController("Index", "Fallback");
+            });
+
+
             app.UseExceptionHandler(builder =>
             {
                 builder.Run(async context =>
