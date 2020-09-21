@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { User } from '../_models/user';
 import { Pagination, PaginationResult } from '../_models/pagination';
 import { AuthService } from '../_services/auth.service';
@@ -10,6 +10,7 @@ import { AlertifyService } from '../_services/alertify.service';
   selector: 'app-lists',
   templateUrl: './lists.component.html',
   styleUrls: ['./lists.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
 export class ListsComponent implements OnInit {
   users: User[];

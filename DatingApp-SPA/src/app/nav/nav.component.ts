@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../_services/auth.service';
 import { AlertifyService } from '../_services/alertify.service';
-import { BsDropdownConfig } from 'ngx-bootstrap/dropdown';
+import { BsDropdownConfig, BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { Router } from '@angular/router';
 import { HomeComponent } from '../home/home.component';
 import { DataServiceService } from '../_services/data-service.service';
@@ -17,7 +17,7 @@ import { DataServiceService } from '../_services/data-service.service';
     },
   ],
 })
-export class NavComponent implements OnInit {
+export class NavComponent implements OnInit  {
   model: any = {};
   photoUrl: string;
   showLogin = false;

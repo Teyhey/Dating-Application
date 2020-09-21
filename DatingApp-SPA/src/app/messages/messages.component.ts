@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Message } from '../_models/message';
 import { Pagination, PaginationResult } from '../_models/pagination';
 import { ActivatedRoute } from '@angular/router';
@@ -10,6 +10,7 @@ import { AlertifyService } from '../_services/alertify.service';
   selector: 'app-messages',
   templateUrl: './messages.component.html',
   styleUrls: ['./messages.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
 export class MessagesComponent implements OnInit {
   messages: Message[];

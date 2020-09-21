@@ -38,7 +38,6 @@ import { ListsResolver } from './_resolvers/lists.resolver';
 import { MessagesResolver } from './_resolvers/messages.resolver';
 import { MemberMessagesComponent } from './members/member-messages/member-messages.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,7 +51,7 @@ import { MemberMessagesComponent } from './members/member-messages/member-messag
     MemberDetailComponent,
     MemberEditComponent,
     PhotoEditorComponent,
-    MemberMessagesComponent
+    MemberMessagesComponent,
   ],
   imports: [
     BrowserModule,
@@ -90,7 +89,7 @@ import { MemberMessagesComponent } from './members/member-messages/member-messag
     MemberListResolver,
     MemberEditResolver,
     ListsResolver,
-    MessagesResolver
+    MessagesResolver,
   ],
   bootstrap: [AppComponent],
 })
